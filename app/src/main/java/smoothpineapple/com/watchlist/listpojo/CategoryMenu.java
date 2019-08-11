@@ -23,6 +23,7 @@ public class CategoryMenu extends AbstractMediaMenu{
             @Override
             public void onEvent(View parent, Object clickedItem) {
                 Intent categoryIntent = new Intent(getParentActivity().getApplicationContext(), MediaListActivity.class);
+                categoryIntent.putExtra(getParentActivity().getResources().getString(R.string.media_activity_name), ((MediaItem)clickedItem).getName());
                 getParentActivity().startActivity(categoryIntent);
             }
         } );

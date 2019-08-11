@@ -19,8 +19,7 @@ public abstract class AbstractMediaMenu {
     public AbstractMediaMenu(Activity activity, ListView listView) {
         m_parentActivity = activity;
         m_listView = listView;
-
-        //setClickListener();
+        
     }
 
     protected Activity getParentActivity() {
