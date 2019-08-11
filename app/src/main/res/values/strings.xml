@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WatchList</string>
+    <array name="categories">
+        <item>Movie</item>
+        <item>TV</item>
+    </array>
+</resources>
