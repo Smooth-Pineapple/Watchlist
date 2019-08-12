@@ -17,4 +17,13 @@
         android:textSize="20dp"
         android:paddingTop="10sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mediaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mediaPoster"
+        android:layout_below="@id/mediaName"
+        android:paddingTop="10sp"
+        android:textSize="10dp" />
 </RelativeLayout>

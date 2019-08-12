@@ -40,6 +40,9 @@ public class MediaAdapter extends ArrayAdapter<MediaItem> {
         TextView mediaName = viewItem.findViewById(R.id.mediaName);
         mediaName.setText(mediaItem.getName());
 
+        TextView mediaDescription = viewItem.findViewById(R.id.mediaDescription);
+        mediaDescription.setText(mediaItem.getDescription());
+
         return viewItem;
     }
 }
