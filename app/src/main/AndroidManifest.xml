@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CategoryMenuActivity" />
-        <activity android:name=".MediaListActivity"></activity>
+        <activity android:name=".MediaListActivity"/>
     </application>
 
 </manifest>
