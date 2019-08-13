@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
-        if(m_setupDB != null) {
+        if(m_setupDB != null && !m_setupDB.isCancelled()) {
             m_setupDB.cancel(true);
         }
     }
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-        if(m_setupDB != null) {
+        if(m_setupDB != null && !m_setupDB.isCancelled()) {
             m_setupDB.cancel(true);
         }
     }
