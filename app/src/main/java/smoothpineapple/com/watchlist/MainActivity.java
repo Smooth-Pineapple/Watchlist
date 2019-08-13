@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
             m_progressView.hide();
             Intent categoryIntent = new Intent(MainActivity.this, CategoryMenuActivity.class);
             startActivity(categoryIntent);
+
+            finish();
         }
     }
 }
