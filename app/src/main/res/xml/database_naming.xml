@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- UNUSED !-->
+<database>
+    <string name="database_name">watchlistDB.db</string>
+    <integer name="database_version">1</integer>
+    <tables name="db_tables">
+        <table name="media_table">
+            <column name="id">id</column>
+            <column name="title">title</column>
+            <column name="played">played</column>
+            <column name="runtime">runtime</column>
+            <column name="tagline">tagline</column>
+            <column name="rating">rating</column>
+            <column name="age">age</column>
+            <column name="description">description</column>
+            <column name="year">year</column>
+            <column name="imdb_path">imdb_path</column>
+            <column name="poster_path">poster_path</column>
+            <column name="media_path">media_path</column>
+        </table>
+        <table name="genre_table">
+            <column name="id">id</column>
+            <column name="genre">genre</column>
+        </table>
+        <table name="media_genre_table">
+            <column name="media_id">media_id</column>
+            <column name="genre_id">genre_id</column>
+        </table>
+        <table name="set_table">
+            <column name="id">id</column>
+            <column name="set">set</column>
+        </table>
+        <table name="media_set_table">
+            <column name="media_id">media_id</column>
+            <column name="set_id">set_id</column>
+        </table>
+        <table name="cast_table">
+            <column name="id">id</column>
+            <column name="cast">cast</column>
+        </table>
+        <table name="media_cast_table">
+            <column name="media_id">media_id</column>
+            <column name="cast_id">cast_id</column>
+        </table>
+        <table name="director_table">
+            <column name="id">id</column>
+            <column name="director">director</column>
+        </table>
+        <table name="media_director_table">
+            <column name="media_id">media_id</column>
+            <column name="director_id">director_id</column>
+        </table>
+    </tables>
+</database>
