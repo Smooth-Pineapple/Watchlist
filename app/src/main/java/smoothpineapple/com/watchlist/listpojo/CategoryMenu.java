@@ -3,6 +3,7 @@ package smoothpineapple.com.watchlist.listpojo;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -39,7 +40,12 @@ public class CategoryMenu extends AbstractMediaMenu{
         }
 
         MediaAdapter adapter = createAdapter(categoryMap);
-        setAdapter(adapter);
+
+        try {
+            setAdapter(adapter);
+        } catch(NullPointerException nPE) {
+            Log.e(this.getClass().getName(), "Category menu ListView adapter cannot be set");
+        }
     }
 
     @Override

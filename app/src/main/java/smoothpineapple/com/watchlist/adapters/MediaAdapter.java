@@ -1,6 +1,7 @@
 package smoothpineapple.com.watchlist.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,12 +36,24 @@ public class MediaAdapter extends ArrayAdapter<MediaItem> {
         MediaItem mediaItem = m_mediaItems.get(position);
 
         ImageView mediaPoster = viewItem.findViewById(R.id.mediaPoster);
+        if(mediaPoster == null) {
+            Log.e(this.getClass().getName(), "Error inflating Media Poster");
+            return null;
+        }
         mediaPoster.setImageDrawable(mediaItem.getCover());
 
         TextView mediaName = viewItem.findViewById(R.id.mediaName);
+        if(mediaName == null) {
+            Log.e(this.getClass().getName(), "Error inflating Media Name");
+            return null;
+        }
         mediaName.setText(mediaItem.getName());
 
         TextView mediaDescription = viewItem.findViewById(R.id.mediaDescription);
+        if(mediaDescription == null) {
+            Log.e(this.getClass().getName(), "Error inflating Media Description");
+            return null;
+        }
         mediaDescription.setText(mediaItem.getDescription());
 
         return viewItem;

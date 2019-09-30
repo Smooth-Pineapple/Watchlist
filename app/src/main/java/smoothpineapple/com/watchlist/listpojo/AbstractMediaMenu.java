@@ -64,7 +64,8 @@ public abstract class AbstractMediaMenu {
         return new MediaAdapter(m_parentActivity, mediaItems);
     }
 
-    protected void setAdapter(MediaAdapter adapter) {
+    protected void setAdapter(MediaAdapter adapter) throws NullPointerException {
+        if(m_listView == null) { throw new NullPointerException(); }
         m_listView.setAdapter(adapter);
     }
 
