@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected Boolean doInBackground(String... databaseBath) {
             try {
-                Thread.sleep(5000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
